@@ -337,32 +337,58 @@
 	.de-wait { margin: 0 2px -3px 0 !important; width: 16px; height: 16px; }
 	#de-wrapper-popup { overflow-x: hidden !important; overflow-y: auto !important; -moz-box-sizing: border-box; box-sizing: border-box; max-height: 100vh; position: fixed; right: 0; top: 0; z-index: 9999; font: 14px arial; cursor: default; }
 	@keyframes de-wait-anim { to { transform: rotate(360deg); } }
-	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
-	.de-video-obj { width: 360px; height: 270px; }
-	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
-	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
-	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
-	.de-mypost-reply:not(.de-pview) { position: relative; }
-	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
-	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
-	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
-	.de-ref-you::after { content: " (You)"; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
-	.de-btn-fav-sel { color: #FFE100; }
-	.de-btn-hide-user { color: #BFFFBF; }
-	.de-btn-sage { fill: #4B4B4B; }
-	.de-btn-stick-on { color: #BFFFBF; }
-	.de-btn-unhide-user { color: #FFBFBF; }
-	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
-	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
-	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
-	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
-	.de-thr-hid:not([style="display: none;"]) + div + br, 
-	body > hr, .postarea, .theader { display: none !important; }
-	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
-	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
-	.post { overflow-x: auto !important; }
+	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
+
+	.de-video-obj { width: 360px; height: 270px; }
+
+	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
+
+	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
+
+	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
+
+	.de-mypost-reply:not(.de-pview) { position: relative; }
+
+	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
+
+	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
+
+	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
+
+	.de-ref-you::after { content: " (You)"; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
+
+	.de-btn-fav-sel { color: #FFE100; }
+
+	.de-btn-hide-user { color: #BFFFBF; }
+
+	.de-btn-sage { fill: #4B4B4B; }
+
+	.de-btn-stick-on { color: #BFFFBF; }
+
+	.de-btn-unhide-user { color: #FFBFBF; }
+
+	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
+
+	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
+
+	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.de-thr-hid:not([style="display: none;"]) + div + br, 
+
+	body > hr, .postarea, .theader { display: none !important; }
+
+	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
+
+	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
+
+	.post { overflow-x: auto !important; }
+
 	.thread_inner img.de-fullimg { max-width: 100% !important; max-height: 100% !important; }</style><style type="text/css" id="de-css-user"></style><style type="text/css">.post { background-color: rgb(221, 221, 221) !important; }</style></head>
 
   <body class="contr_thread de-runned" style="">
@@ -388,7 +414,7 @@
 <div class="post_image_block" id="pib_1_1" pib="1_1" title="148.6 Кб, 1600 x 1200
 1391274423028.jpg
 1391274423028.jpg"><a class="expand_image" href="http://image.bayimg.com/bf55a69cc93d4ba456f781cea1fd123311ecdd3c.jpg"><div class="post_image" id="thumb_1_1"><img src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/bf55a69cc93d4ba456f781cea1fd123311ecdd3c.jpg" alt=""></div></a><svg class="de-btn-img"><use xlink:href="#de-symbol-post-img"></use></svg><a href="http://image.bayimg.com/bf55a69cc93d4ba456f781cea1fd123311ecdd3c.jpg" target="_blank" class="img_filename de-img-name" title="1391274423028.jpg" download="1391274423028.jpg" de-href="http://image.bayimg.com/bf55a69cc93d4ba456f781cea1fd123311ecdd3c.jpg">1391274423028.jpg</a></div><div class="post_comment_body">
-<p>Предыдущий падает на планету из-за перепалки гандамопидоров <a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1435442.html" onclick="highlight(1435442)">&gt;&gt;1435442</a>.<br></p>
+<p>Предыдущий падает на планету из-за перепалки гандамопидоров >>1435442.<br></p>
 </div><div class="de-refmap"><a href="#1451642" class="de-link-backref">&gt;&gt;1451642</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1451642" href="#1451642">&gt;&gt;1451642</a></span></span>
 </div>
@@ -401,7 +427,7 @@
 <div class="post_image_block" id="pib_2_1" pib="2_1" title="85 Кб, 1280 x 720
 1391275315748.jpg
 1391275315748.jpg"><a class="expand_image" href="http://image.bayimg.com/fa212ce365bb0990a7c53a1dbbc5476fc68751f6.jpg"><div class="post_image" id="thumb_2_1"><img src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/fa212ce365bb0990a7c53a1dbbc5476fc68751f6.jpg" alt=""></div></a><svg class="de-btn-img"><use xlink:href="#de-symbol-post-img"></use></svg><a href="http://image.bayimg.com/fa212ce365bb0990a7c53a1dbbc5476fc68751f6.jpg" target="_blank" class="img_filename de-img-name" title="1391275315748.jpg" download="1391275315748.jpg" de-href="http://image.bayimg.com/fa212ce365bb0990a7c53a1dbbc5476fc68751f6.jpg">1391275315748.jpg</a></div><div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1435442.html&amp;ref_post_number=1451370" onclick="highlight(1451370)">&gt;&gt;1451370</a><br>Во
+<p>1451370<br>Во
  втором сезоне это пофиксят и введут третьего протага, который понимает,
  что война это война и поясняет той блондинке, что она тупая 
 пацифистская пизда прямо в лицо. Ну а вообще я хуй знает, кем надо быть,
@@ -2810,7 +2836,7 @@ Origins опенингом будет Tobe! Gundam (т.е. опенинг из �
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Срд 12 Фев 2014 17:59:25&nbsp;</span>&nbsp;<span class="post_num">#224</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1463669"></a><a href="#1463669">№1463669</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">222</span></span>&nbsp;</div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1463661" onclick="highlight(1463661)">&gt;&gt;1463661</a><br>Всё очень плохо, проблемы сида расписаны тут: <a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1435442.html&amp;ref_post_number=1451370" onclick="highlight(1451370)">&gt;&gt;1451370</a></p>
+<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1463661" onclick="highlight(1463661)">&gt;&gt;1463661</a><br>Всё очень плохо, проблемы сида расписаны тут: 1451370</p>
 </div>
 </span>
 </div>
@@ -4199,7 +4225,7 @@ Senki  - если и не твердота, то вполне близка к н
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Суб 15 Фев 2014 21:51:34&nbsp;</span>&nbsp;<span class="post_num">#349</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1468502"></a><a href="#1468502">№1468502</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter de-post-counter-deleted">deleted</span></span>&nbsp;<a href="#1468502" onclick="toggle_deleted_posts();" class="toggle_deleted_posts" title="Развернуть удаленные посты">DELETED</a></div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1466461.html&amp;ref_post_number=1467941" onclick="highlight(1467941)">&gt;&gt;1467941</a><br>Вот и я о том. Эта бездарная шафтохуйня может понравится далеко не каждому. <br>Я вообще не понимаю, как можно баттхёртить с этого.</p>
+<p>1467941<br>Вот и я о том. Эта бездарная шафтохуйня может понравится далеко не каждому. <br>Я вообще не понимаю, как можно баттхёртить с этого.</p>
 </div>
 </span>
 </div>
@@ -4538,7 +4564,7 @@ Senki  - если и не твердота, то вполне близка к н
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Вск 16 Фев 2014 19:35:27&nbsp;</span>&nbsp;<span class="post_num">#379</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1469969"></a><a href="#1469969">№1469969</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter de-post-counter-deleted">deleted</span></span>&nbsp;<a href="#1469969" onclick="toggle_deleted_posts();" class="toggle_deleted_posts" title="Развернуть удаленные посты">DELETED</a></div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1467553.html&amp;ref_post_number=1469335" onclick="highlight(1469335)">&gt;&gt;1469335</a><br>У меня встал.</p>
+<p>1469335<br>У меня встал.</p>
 </div><div class="de-refmap"><a href="#1470055" class="de-link-backref">&gt;&gt;1470055</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1470055" href="#1470055">&gt;&gt;1470055</a></span></span>
 </div>
@@ -6119,7 +6145,7 @@ Senki  - если и не твердота, то вполне близка к н
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Чтв 20 Фев 2014 11:59:54&nbsp;</span>&nbsp;<span class="post_num">#531</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1474933"></a><a href="#1474933">№1474933</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">502</span></span>&nbsp;</div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1474897" onclick="highlight(1474897)">&gt;&gt;1474897</a><br>Заку-кун уже всё сделал <a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1474834.html" onclick="highlight(1474834)">&gt;&gt;1474834</a></p>
+<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1474897" onclick="highlight(1474897)">&gt;&gt;1474897</a><br>Заку-кун уже всё сделал 1474834</p>
 </div>
 </span>
 </div>
