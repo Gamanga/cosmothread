@@ -338,32 +338,58 @@
 	.de-wait { margin: 0 2px -3px 0 !important; width: 16px; height: 16px; }
 	#de-wrapper-popup { overflow-x: hidden !important; overflow-y: auto !important; -moz-box-sizing: border-box; box-sizing: border-box; max-height: 100vh; position: fixed; right: 0; top: 0; z-index: 9999; font: 14px arial; cursor: default; }
 	@keyframes de-wait-anim { to { transform: rotate(360deg); } }
-	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
-	.de-video-obj { width: 360px; height: 270px; }
-	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
-	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
-	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
-	.de-mypost-reply:not(.de-pview) { position: relative; }
-	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
-	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
-	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
-	.de-ref-you::after { content: " (You)"; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
-	.de-btn-fav-sel { color: #FFE100; }
-	.de-btn-hide-user { color: #BFFFBF; }
-	.de-btn-sage { fill: #4B4B4B; }
-	.de-btn-stick-on { color: #BFFFBF; }
-	.de-btn-unhide-user { color: #FFBFBF; }
-	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
-	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
-	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
-	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
-	.de-thr-hid:not([style="display: none;"]) + div + br, 
-	body > hr, .postarea, .theader { display: none !important; }
-	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
-	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
-	.post { overflow-x: auto !important; }
+	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
+
+	.de-video-obj { width: 360px; height: 270px; }
+
+	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
+
+	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
+
+	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
+
+	.de-mypost-reply:not(.de-pview) { position: relative; }
+
+	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
+
+	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
+
+	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
+
+	.de-ref-you::after { content: " (You)"; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
+
+	.de-btn-fav-sel { color: #FFE100; }
+
+	.de-btn-hide-user { color: #BFFFBF; }
+
+	.de-btn-sage { fill: #4B4B4B; }
+
+	.de-btn-stick-on { color: #BFFFBF; }
+
+	.de-btn-unhide-user { color: #FFBFBF; }
+
+	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
+
+	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
+
+	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.de-thr-hid:not([style="display: none;"]) + div + br, 
+
+	body > hr, .postarea, .theader { display: none !important; }
+
+	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
+
+	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
+
+	.post { overflow-x: auto !important; }
+
 	.thread_inner img.de-fullimg { max-width: 100% !important; max-height: 100% !important; }</style><style type="text/css" id="de-css-user"></style><style type="text/css">.post { background-color: rgb(221, 221, 221) !important; }</style></head>
 
   <body class="contr_thread de-runned" style="">
@@ -385,7 +411,7 @@
 <div class="post_image_block" id="pib_1_1" pib="1_1" title="14 Кб, 579 x 346
 1389274419763.jpg
 1389274419763.jpg"><a class="expand_image" href="http://image.bayimg.com/2f8be14dee4061be195ac26ab95f20d3827ebad8.jpg"><div class="post_image" id="thumb_1_1"><img src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%232_files/2f8be14dee4061be195ac26ab95f20d3827ebad8.jpg" alt=""></div></a><svg class="de-btn-img"><use xlink:href="#de-symbol-post-img"></use></svg><a href="http://image.bayimg.com/2f8be14dee4061be195ac26ab95f20d3827ebad8.jpg" target="_blank" class="img_filename de-img-name" title="1389274419763.jpg" download="1389274419763.jpg" de-href="http://image.bayimg.com/2f8be14dee4061be195ac26ab95f20d3827ebad8.jpg">1389274419763.jpg</a></div><div class="post_comment_body">
-<p>Предыдущий тред:<a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1415907.html" onclick="highlight(1415907)">&gt;&gt;1415907</a><br>Приглашаются все, в том числе и LOGH-товарищи.</p>
+<p>Предыдущий тред:1415907<br>Приглашаются все, в том числе и LOGH-товарищи.</p>
 </div><div class="de-refmap"><a href="#1425522" class="de-link-backref">&gt;&gt;1425522</a><span class="de-refcomma">, </span><a href="#1425523" class="de-link-backref">&gt;&gt;1425523</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1425522" href="#1425522">&gt;&gt;1425522</a>, <a class="reply" postid="1425523" href="#1425523">&gt;&gt;1425523</a></span></span>
 </div>
@@ -3951,7 +3977,7 @@ YOBA&lt;гандам с ньютайпом&lt;ЕВА&lt;бастер машин�
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Пнд 13 Янв 2014 21:40:46&nbsp;</span>&nbsp;<span class="post_num">#339</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1431945"></a><a href="#1431945">№1431945</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">340</span></span>&nbsp;</div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1431817" onclick="highlight(1431817)">&gt;&gt;1431817</a><br>Гомофорсера спалили <a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1430455.html&amp;ref_post_number=1431904" onclick="highlight(1431904)">&gt;&gt;1431904</a></p>
+<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1431817" onclick="highlight(1431817)">&gt;&gt;1431817</a><br>Гомофорсера спалили 1431904</p>
 </div><div class="de-refmap"><a href="#1431953" class="de-link-backref">&gt;&gt;1431953</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1431953" href="#1431953">&gt;&gt;1431953</a></span></span>
 </div>
@@ -5715,7 +5741,7 @@ human now. (TV tropes)</p>
 <span class="post_subject">ПЕРЕКАТ ПЕРЕКАТ ПЕРЕКАТ</span>&nbsp;<span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Чтв 16 Янв 2014 11:56:25&nbsp;</span>&nbsp;<span class="post_num">#500</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1435444"></a><a href="#1435444">№1435444</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">501</span></span>&nbsp;</div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=http://2ch.hk/a/res/1435442.html" rel="nofollow">http://2ch.hk/a/res/1435442.html</a><br><a href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=http://2ch.hk/a/res/1435442.html" rel="nofollow">http://2ch.hk/a/res/1435442.html</a><br><a href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=http://2ch.hk/a/res/1435442.html" rel="nofollow">http://2ch.hk/a/res/1435442.html</a><br><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1435442.html" onclick="highlight(1435442)">&gt;&gt;1435442</a><br><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1435442.html" onclick="highlight(1435442)">&gt;&gt;1435442</a><br><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1435442.html" onclick="highlight(1435442)">&gt;&gt;1435442</a><br></p>
+<p><br><br><br>1435442<br>1435442<br>1435442<br></p>
 </div>
 </span>
 </div>
