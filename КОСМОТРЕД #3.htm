@@ -337,32 +337,58 @@
 	.de-wait { margin: 0 2px -3px 0 !important; width: 16px; height: 16px; }
 	#de-wrapper-popup { overflow-x: hidden !important; overflow-y: auto !important; -moz-box-sizing: border-box; box-sizing: border-box; max-height: 100vh; position: fixed; right: 0; top: 0; z-index: 9999; font: 14px arial; cursor: default; }
 	@keyframes de-wait-anim { to { transform: rotate(360deg); } }
-	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
-	.de-video-obj { width: 360px; height: 270px; }
-	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
-	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
-	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
-	.de-mypost-reply:not(.de-pview) { position: relative; }
-	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
-	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
-	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
-	.de-ref-you::after { content: " (You)"; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
-	.de-btn-fav-sel { color: #FFE100; }
-	.de-btn-hide-user { color: #BFFFBF; }
-	.de-btn-sage { fill: #4B4B4B; }
-	.de-btn-stick-on { color: #BFFFBF; }
-	.de-btn-unhide-user { color: #FFBFBF; }
-	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
-	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
-	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
-	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
-	.de-thr-hid:not([style="display: none;"]) + div + br, 
-	body > hr, .postarea, .theader { display: none !important; }
-	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
-	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
-	.post { overflow-x: auto !important; }
+	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
+
+	.de-video-obj { width: 360px; height: 270px; }
+
+	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
+
+	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
+
+	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
+
+	.de-mypost-reply:not(.de-pview) { position: relative; }
+
+	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
+
+	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
+
+	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
+
+	.de-ref-you::after { content: " (You)"; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
+
+	.de-btn-fav-sel { color: #FFE100; }
+
+	.de-btn-hide-user { color: #BFFFBF; }
+
+	.de-btn-sage { fill: #4B4B4B; }
+
+	.de-btn-stick-on { color: #BFFFBF; }
+
+	.de-btn-unhide-user { color: #FFBFBF; }
+
+	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
+
+	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
+
+	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.de-thr-hid:not([style="display: none;"]) + div + br, 
+
+	body > hr, .postarea, .theader { display: none !important; }
+
+	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
+
+	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
+
+	.post { overflow-x: auto !important; }
+
 	.thread_inner img.de-fullimg { max-width: 100% !important; max-height: 100% !important; }</style><style type="text/css" id="de-css-user"></style><style type="text/css">.post { background-color: rgb(221, 221, 221) !important; }</style></head>
 
   <body class="contr_thread de-runned" style="">
@@ -391,7 +417,7 @@
 <div class="post_image_block" id="pib_1_1" pib="1_1" title="22.8 Кб, 260 x 325
 1389858827791.jpg
 1389858827791.jpg"><a class="expand_image" href="http://image.bayimg.com/df4a018a29e946e163232205c9d422efa1db90a5.jpg"><div class="post_image" id="thumb_1_1"><img src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/df4a018a29e946e163232205c9d422efa1db90a5.jpg" alt=""></div></a><svg class="de-btn-img"><use xlink:href="#de-symbol-post-img"></use></svg><a href="http://image.bayimg.com/df4a018a29e946e163232205c9d422efa1db90a5.jpg" target="_blank" class="img_filename de-img-name" title="1389858827791.jpg" download="1389858827791.jpg" de-href="http://image.bayimg.com/df4a018a29e946e163232205c9d422efa1db90a5.jpg">1389858827791.jpg</a></div><div class="post_comment_body">
-<p>Предыдущий:<a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1425517.html" onclick="highlight(1425517)">&gt;&gt;1425517</a><br>Тред по самым разным космотайтлам, от Гандама и Макросса до Харлока и Легенды.</p>
+<p>Предыдущий:1425517<br>Тред по самым разным космотайтлам, от Гандама и Макросса до Харлока и Легенды.</p>
 </div><div class="de-refmap"><a href="#1439603" class="de-link-backref">&gt;&gt;1439603</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1439603" href="#1439603">&gt;&gt;1439603</a></span></span>
 </div>
@@ -892,7 +918,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Чтв 16 Янв 2014 19:44:14&nbsp;</span>&nbsp;<span class="post_num">#47</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436041"></a><a href="#1436041">№1436041</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">48</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'UmPgLCezAGw','https://www.youtube.com/v/UmPgLCezAGw?autoplay=1',1);" class="vid_thumb" id="vid_thumb_UmPgLCezAGw" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/UmPgLCezAGw/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/UmPgLCezAGw" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=UmPgLCezAGw" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/UmPgLCezAGw" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=UmPgLCezAGw" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0.jpg"></a></div><div class="post_comment_body">
 <p>Если нечет, то на каждый корабль/поезд приходит ящик с бутылками шнапса "Боммерлундер".</p>
 </div><div class="de-refmap"><a href="#1436079" class="de-link-backref">&gt;&gt;1436079</a><span class="de-refcomma">, </span><a href="#1436265" class="de-link-backref">&gt;&gt;1436265</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1436079" href="#1436079">&gt;&gt;1436079</a>, <a class="reply" postid="1436265" href="#1436265">&gt;&gt;1436265</a></span></span>
@@ -934,7 +960,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Чтв 16 Янв 2014 23:37:17&nbsp;</span>&nbsp;<span class="post_num">#51</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436400"></a><a href="#1436400">№1436400</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">52</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'lNcy1Ce5_yo','https://www.youtube.com/v/lNcy1Ce5_yo?autoplay=1',1);" class="vid_thumb" id="vid_thumb_lNcy1Ce5_yo" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/lNcy1Ce5_yo/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/lNcy1Ce5_yo" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=lNcy1Ce5_yo" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_030.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/lNcy1Ce5_yo" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=lNcy1Ce5_yo" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_030.jpg"></a></div><div class="post_comment_body">
 <p>Где все?</p>
 </div>
 </span>
@@ -961,7 +987,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 00:35:30&nbsp;</span>&nbsp;<span class="post_num">#54</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436521"></a><a href="#1436521">№1436521</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">55</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'IOgo_clq8dM','https://www.youtube.com/v/IOgo_clq8dM?autoplay=1',1);" class="vid_thumb" id="vid_thumb_IOgo_clq8dM" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/IOgo_clq8dM/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/IOgo_clq8dM" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=IOgo_clq8dM" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_023.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/IOgo_clq8dM" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=IOgo_clq8dM" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_023.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1436517" onclick="highlight(1436517)">&gt;&gt;1436517</a><br>Ладно. Запощу Клэш и буду ждать чьего-то пришествия.</p>
 </div>
 </span>
@@ -970,7 +996,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 00:46:36&nbsp;</span>&nbsp;<span class="post_num">#55</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436538"></a><a href="#1436538">№1436538</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">56</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'UtkieCk_4-U','https://www.youtube.com/v/UtkieCk_4-U?autoplay=1',1);" class="vid_thumb" id="vid_thumb_UtkieCk_4-U" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/UtkieCk_4-U/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/UtkieCk_4-U" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=UtkieCk_4-U" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_013.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/UtkieCk_4-U" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=UtkieCk_4-U" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_013.jpg"></a></div><div class="post_comment_body">
 <p>Странная музыка у нас в космо-тредах.</p>
 </div><div class="de-refmap"><a href="#1436630" class="de-link-backref">&gt;&gt;1436630</a><span class="de-refcomma">, </span><a href="#1436755" class="de-link-backref">&gt;&gt;1436755</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1436630" href="#1436630">&gt;&gt;1436630</a>, <a class="reply" postid="1436755" href="#1436755">&gt;&gt;1436755</a></span></span>
@@ -979,7 +1005,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 02:10:27&nbsp;</span>&nbsp;<span class="post_num">#56</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436630"></a><a href="#1436630">№1436630</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">57</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'ACCOPwGtvEQ','https://www.youtube.com/v/ACCOPwGtvEQ?autoplay=1',1);" class="vid_thumb" id="vid_thumb_ACCOPwGtvEQ" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/ACCOPwGtvEQ/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/ACCOPwGtvEQ" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ACCOPwGtvEQ" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_011.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/ACCOPwGtvEQ" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ACCOPwGtvEQ" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_011.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1436538" onclick="highlight(1436538)">&gt;&gt;1436538</a><br>Какая есть.</p>
 </div>
 </span>
@@ -988,7 +1014,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 09:12:58&nbsp;</span>&nbsp;<span class="post_num">#57</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436755"></a><a href="#1436755">№1436755</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">58</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'NwrMlv8IEvE','https://www.youtube.com/v/NwrMlv8IEvE?autoplay=1',1);" class="vid_thumb" id="vid_thumb_NwrMlv8IEvE" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/NwrMlv8IEvE/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/NwrMlv8IEvE" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=NwrMlv8IEvE" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_029.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/NwrMlv8IEvE" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=NwrMlv8IEvE" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_029.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1436538" onclick="highlight(1436538)">&gt;&gt;1436538</a><br></p>
 </div><div class="de-refmap"><a href="#1436756" class="de-link-backref">&gt;&gt;1436756</a><span class="de-refcomma">, </span><a href="#1436767" class="de-link-backref">&gt;&gt;1436767</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1436756" href="#1436756">&gt;&gt;1436756</a>, <a class="reply" postid="1436767" href="#1436767">&gt;&gt;1436767</a></span></span>
@@ -997,7 +1023,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 09:17:38&nbsp;</span>&nbsp;<span class="post_num">#58</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436756"></a><a href="#1436756">№1436756</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">59</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'bcAYydMSQvQ','https://www.youtube.com/v/bcAYydMSQvQ?autoplay=1',1);" class="vid_thumb" id="vid_thumb_bcAYydMSQvQ" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/bcAYydMSQvQ/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/bcAYydMSQvQ" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=bcAYydMSQvQ" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_012.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/bcAYydMSQvQ" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=bcAYydMSQvQ" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_012.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1436755" onclick="highlight(1436755)">&gt;&gt;1436755</a><br></p>
 </div><div class="de-refmap"><a href="#1436767" class="de-link-backref">&gt;&gt;1436767</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1436767" href="#1436767">&gt;&gt;1436767</a></span></span>
@@ -1048,7 +1074,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 11:02:44&nbsp;</span>&nbsp;<span class="post_num">#63</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1436787"></a><a href="#1436787">№1436787</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">64</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'jbCqwl2geQg','https://www.youtube.com/v/jbCqwl2geQg?autoplay=1',1);" class="vid_thumb" id="vid_thumb_jbCqwl2geQg" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/jbCqwl2geQg/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/jbCqwl2geQg" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=jbCqwl2geQg" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_014.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/jbCqwl2geQg" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=jbCqwl2geQg" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_014.jpg"></a></div><div class="post_comment_body">
 <p>/</p>
 </div>
 </span>
@@ -1148,7 +1174,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 20:56:59&nbsp;</span>&nbsp;<span class="post_num">#72</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1437306"></a><a href="#1437306">№1437306</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">73</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'tg2EbJy-9dc','https://www.youtube.com/v/tg2EbJy-9dc?autoplay=1',1);" class="vid_thumb" id="vid_thumb_tg2EbJy-9dc" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/tg2EbJy-9dc/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/tg2EbJy-9dc" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=tg2EbJy-9dc" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_004.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/tg2EbJy-9dc" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=tg2EbJy-9dc" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_004.jpg"></a></div><div class="post_comment_body">
 <p><em>Работает приёмник. Сначала звучит реклама казино на Стороне 6, 
 где предполагается джазовый концерт, после чего включается рок 50-х.</em></p>
 </div><div class="de-refmap"><a href="#1437318" class="de-link-backref">&gt;&gt;1437318</a><span class="de-refcomma">, </span></div>
@@ -1158,7 +1184,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 21:02:57&nbsp;</span>&nbsp;<span class="post_num">#73</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1437318"></a><a href="#1437318">№1437318</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">74</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'uGPG_Y-_BZI','https://www.youtube.com/v/uGPG_Y-_BZI?autoplay=1',1);" class="vid_thumb" id="vid_thumb_uGPG_Y-_BZI" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/uGPG_Y-_BZI/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/uGPG_Y-_BZI" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=uGPG_Y-_BZI" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_002.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/uGPG_Y-_BZI" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=uGPG_Y-_BZI" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_002.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1437306" onclick="highlight(1437306)">&gt;&gt;1437306</a><br></p>
 </div><div class="de-refmap"><a href="#1437326" class="de-link-backref">&gt;&gt;1437326</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1437326" href="#1437326">&gt;&gt;1437326</a></span></span>
@@ -1167,7 +1193,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 17 Янв 2014 21:05:33&nbsp;</span>&nbsp;<span class="post_num">#74</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1437326"></a><a href="#1437326">№1437326</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">75</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'296wS9ome4M','https://www.youtube.com/v/296wS9ome4M?autoplay=1',1);" class="vid_thumb" id="vid_thumb_296wS9ome4M" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/296wS9ome4M/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/296wS9ome4M" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=296wS9ome4M" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_019.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/296wS9ome4M" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=296wS9ome4M" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_019.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1437318" onclick="highlight(1437318)">&gt;&gt;1437318</a><br></p>
 </div>
 </span>
@@ -1390,7 +1416,7 @@
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Суб 18 Янв 2014 01:09:45&nbsp;</span>&nbsp;<span class="post_num">#94</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1437682"></a><a href="#1437682">№1437682</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">95</span></span>&nbsp;</div>
 <span class="post_comment">
 <div class="post_comment_body">
-<p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1437676" onclick="highlight(1437676)">&gt;&gt;1437676</a><br>Отклеилось.<br><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="https://arhivach.ng/ajax/?act=locate_thread&amp;url=https://2ch.hk/a/res/1425517.html&amp;ref_post_number=1429154" onclick="highlight(1429154)">&gt;&gt;1429154</a><br></p>
+<p>1429154<br></p>
 </div><div class="de-refmap"><a href="#1437684" class="de-link-backref">&gt;&gt;1437684</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1437684" href="#1437684">&gt;&gt;1437684</a></span></span>
 </div>
@@ -1420,7 +1446,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Суб 18 Янв 2014 01:43:48&nbsp;</span>&nbsp;<span class="post_num">#97</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1437705"></a><a href="#1437705">№1437705</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">98</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'NaVMIfOtrbk','https://www.youtube.com/v/NaVMIfOtrbk?autoplay=1',1);" class="vid_thumb" id="vid_thumb_NaVMIfOtrbk" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/NaVMIfOtrbk/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/NaVMIfOtrbk" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=NaVMIfOtrbk" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_016.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/NaVMIfOtrbk" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=NaVMIfOtrbk" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_016.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1437701" onclick="highlight(1437701)">&gt;&gt;1437701</a><br>Китам понравилось.</p>
 </div><div class="de-refmap"><a href="#1437714" class="de-link-backref">&gt;&gt;1437714</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1437714" href="#1437714">&gt;&gt;1437714</a></span></span>
@@ -1438,7 +1464,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Суб 18 Янв 2014 01:45:40&nbsp;</span>&nbsp;<span class="post_num">#99</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1437708"></a><a href="#1437708">№1437708</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">100</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'OV5_LQArLa0','https://www.youtube.com/v/OV5_LQArLa0?autoplay=1',1);" class="vid_thumb" id="vid_thumb_OV5_LQArLa0" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/OV5_LQArLa0/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/OV5_LQArLa0" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=OV5_LQArLa0" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_010.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/OV5_LQArLa0" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=OV5_LQArLa0" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_010.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1437706" onclick="highlight(1437706)">&gt;&gt;1437706</a><br>Оторвалось</p>
 </div><div class="de-refmap"><a href="#1437712" class="de-link-backref">&gt;&gt;1437712</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1437712" href="#1437712">&gt;&gt;1437712</a></span></span>
@@ -1601,7 +1627,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Суб 18 Янв 2014 18:07:05&nbsp;</span>&nbsp;<span class="post_num">#115</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1438265"></a><a href="#1438265">№1438265</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">116</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'KYz6NVogtd8','https://www.youtube.com/v/KYz6NVogtd8?autoplay=1',1);" class="vid_thumb" id="vid_thumb_KYz6NVogtd8" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/KYz6NVogtd8/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/KYz6NVogtd8" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=KYz6NVogtd8" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_020.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/KYz6NVogtd8" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=KYz6NVogtd8" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_020.jpg"></a></div><div class="post_comment_body">
 <p>Музыки в тред!</p>
 </div>
 </span>
@@ -2494,7 +2520,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Вск 19 Янв 2014 23:53:25&nbsp;</span>&nbsp;<span class="post_num">#197</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1439915"></a><a href="#1439915">№1439915</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">198</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'GqH21LEmfbQ','https://www.youtube.com/v/GqH21LEmfbQ?autoplay=1',1);" class="vid_thumb" id="vid_thumb_GqH21LEmfbQ" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/GqH21LEmfbQ/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/GqH21LEmfbQ" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=GqH21LEmfbQ" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_022.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/GqH21LEmfbQ" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=GqH21LEmfbQ" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_022.jpg"></a></div><div class="post_comment_body">
 <p>Музыки в тред!</p>
 </div>
 </span>
@@ -2555,7 +2581,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Пнд 20 Янв 2014 07:40:55&nbsp;</span>&nbsp;<span class="post_num">#203</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1440106"></a><a href="#1440106">№1440106</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">204</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'XehQqKQhnJY','https://www.youtube.com/v/XehQqKQhnJY?autoplay=1',1);" class="vid_thumb" id="vid_thumb_XehQqKQhnJY" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/XehQqKQhnJY/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/XehQqKQhnJY" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=XehQqKQhnJY" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_015.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/XehQqKQhnJY" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=XehQqKQhnJY" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_015.jpg"></a></div><div class="post_comment_body">
 <p><strong>Remember A Baoa Qu</strong></p>
 </div>
 </span>
@@ -2573,7 +2599,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Пнд 20 Янв 2014 13:50:31&nbsp;</span>&nbsp;<span class="post_num">#205</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1440195"></a><a href="#1440195">№1440195</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">206</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'qxfzGE6htfk','https://www.youtube.com/v/qxfzGE6htfk?autoplay=1',1);" class="vid_thumb" id="vid_thumb_qxfzGE6htfk" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/qxfzGE6htfk/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/qxfzGE6htfk" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=qxfzGE6htfk" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_017.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/qxfzGE6htfk" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=qxfzGE6htfk" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_017.jpg"></a></div><div class="post_comment_body">
 <p>Мехафажество в массы!</p>
 </div><div class="de-refmap"><a href="#1440204" class="de-link-backref">&gt;&gt;1440204</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1440204" href="#1440204">&gt;&gt;1440204</a></span></span>
@@ -2686,7 +2712,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Пнд 20 Янв 2014 19:11:19&nbsp;</span>&nbsp;<span class="post_num">#216</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1440323"></a><a href="#1440323">№1440323</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">217</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'ezZsjt9vfg4','https://www.youtube.com/v/ezZsjt9vfg4?autoplay=1',1);" class="vid_thumb" id="vid_thumb_ezZsjt9vfg4" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/ezZsjt9vfg4/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/ezZsjt9vfg4" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ezZsjt9vfg4" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_026.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/ezZsjt9vfg4" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ezZsjt9vfg4" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_026.jpg"></a></div><div class="post_comment_body">
 <p><em>По абстрактному приёмнику идет трансляция джазовой музыки</em></p>
 </div>
 </span>
@@ -3109,7 +3135,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Срд 22 Янв 2014 01:43:26&nbsp;</span>&nbsp;<span class="post_num">#256</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1441743"></a><a href="#1441743">№1441743</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">257</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'YlHApv7tmW8','https://www.youtube.com/v/YlHApv7tmW8?autoplay=1',1);" class="vid_thumb" id="vid_thumb_YlHApv7tmW8" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/YlHApv7tmW8/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/YlHApv7tmW8" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=YlHApv7tmW8" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_009.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/YlHApv7tmW8" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=YlHApv7tmW8" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_009.jpg"></a></div><div class="post_comment_body">
 <p>All in the car!</p>
 </div><div class="de-refmap"><a href="#1441764" class="de-link-backref">&gt;&gt;1441764</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1441764" href="#1441764">&gt;&gt;1441764</a></span></span>
@@ -3736,7 +3762,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 24 Янв 2014 20:15:36&nbsp;</span>&nbsp;<span class="post_num">#316</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1444483"></a><a href="#1444483">№1444483</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">317</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'pmkc0eFbC1E','https://www.youtube.com/v/pmkc0eFbC1E?autoplay=1',1);" class="vid_thumb" id="vid_thumb_pmkc0eFbC1E" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/pmkc0eFbC1E/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/pmkc0eFbC1E" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=pmkc0eFbC1E" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_021.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/pmkc0eFbC1E" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=pmkc0eFbC1E" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_021.jpg"></a></div><div class="post_comment_body">
 <p><em>Час босса-новы для всех, кто на связи</em></p>
 </div>
 </span>
@@ -3981,7 +4007,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Суб 25 Янв 2014 08:57:48&nbsp;</span>&nbsp;<span class="post_num">#341</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1445302"></a><a href="#1445302">№1445302</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">342</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'a97gkNPwLRA','https://www.youtube.com/v/a97gkNPwLRA?autoplay=1',1);" class="vid_thumb" id="vid_thumb_a97gkNPwLRA" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/a97gkNPwLRA/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/a97gkNPwLRA" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=a97gkNPwLRA" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_027.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/a97gkNPwLRA" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=a97gkNPwLRA" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_027.jpg"></a></div><div class="post_comment_body">
 <p>Гамилус как фракция конечно унылое говно, и до харизмы Зеона ему далеко, но гимн у них, должен признать, охуенный.<br>Почитал вики, если судить по разной судьбе Десслера в старом сериале и ремейке, то ждать плагиатного сиквела походу не стоит.</p>
 </div><div class="de-refmap"><a href="#1445335" class="de-link-backref">&gt;&gt;1445335</a><span class="de-refcomma">, </span><a href="#1445368" class="de-link-backref">&gt;&gt;1445368</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1445335" href="#1445335">&gt;&gt;1445335</a>, <a class="reply" postid="1445368" href="#1445368">&gt;&gt;1445368</a></span></span>
@@ -4337,7 +4363,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Вск 26 Янв 2014 14:13:46&nbsp;</span>&nbsp;<span class="post_num">#374</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1446784"></a><a href="#1446784">№1446784</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">375</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'DLafiUfEcPo','https://www.youtube.com/v/DLafiUfEcPo?autoplay=1',1);" class="vid_thumb" id="vid_thumb_DLafiUfEcPo" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/DLafiUfEcPo/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/DLafiUfEcPo" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=DLafiUfEcPo" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_003.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/DLafiUfEcPo" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=DLafiUfEcPo" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_003.jpg"></a></div><div class="post_comment_body">
 <p>Что-то меня заело на этой песне.</p>
 </div>
 </span>
@@ -4425,7 +4451,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Пнд 27 Янв 2014 00:14:53&nbsp;</span>&nbsp;<span class="post_num">#382</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1447719"></a><a href="#1447719">№1447719</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">383</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'qEy6hgdKtbw','https://www.youtube.com/v/qEy6hgdKtbw?autoplay=1',1);" class="vid_thumb" id="vid_thumb_qEy6hgdKtbw" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/qEy6hgdKtbw/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/qEy6hgdKtbw" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=qEy6hgdKtbw" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_008.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/qEy6hgdKtbw" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=qEy6hgdKtbw" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_008.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1447712" onclick="highlight(1447712)">&gt;&gt;1447712</a><br></p>
 </div>
 </span>
@@ -4623,7 +4649,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Срд 29 Янв 2014 12:29:35&nbsp;</span>&nbsp;<span class="post_num">#402</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1449006"></a><a href="#1449006">№1449006</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">403</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'3BqbDO2iS_U','https://www.youtube.com/v/3BqbDO2iS_U?autoplay=1',1);" class="vid_thumb" id="vid_thumb_3BqbDO2iS_U" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/3BqbDO2iS_U/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/3BqbDO2iS_U" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=3BqbDO2iS_U" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_024.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/3BqbDO2iS_U" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=3BqbDO2iS_U" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_024.jpg"></a></div><div class="post_comment_body">
 <p>Бамп опенингом Зеты</p>
 </div>
 </span>
@@ -4665,7 +4691,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Срд 29 Янв 2014 20:40:37&nbsp;</span>&nbsp;<span class="post_num">#406</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1449177"></a><a href="#1449177">№1449177</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">407</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'ckUbAykOt3M','https://www.youtube.com/v/ckUbAykOt3M?autoplay=1',1);" class="vid_thumb" id="vid_thumb_ckUbAykOt3M" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/ckUbAykOt3M/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/ckUbAykOt3M" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ckUbAykOt3M" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_025.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/ckUbAykOt3M" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ckUbAykOt3M" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_025.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1447793" onclick="highlight(1447793)">&gt;&gt;1447793</a><br>в зете гораздо больше брайтслапов.<br>в зете чоткие посоны ебашат по хардкору, Камилл мужик ебашит всем ебало, посанский тайтол ящитаю</p>
 </div><div class="de-refmap"><a href="#1449206" class="de-link-backref">&gt;&gt;1449206</a><span class="de-refcomma">, </span><a href="#1449215" class="de-link-backref">&gt;&gt;1449215</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1449206" href="#1449206">&gt;&gt;1449206</a>, <a class="reply" postid="1449215" href="#1449215">&gt;&gt;1449215</a></span></span>
@@ -4685,7 +4711,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Срд 29 Янв 2014 20:43:14&nbsp;</span>&nbsp;<span class="post_num">#408</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1449183"></a><a href="#1449183">№1449183</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">409</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'RCK-E5AopVI','https://www.youtube.com/v/RCK-E5AopVI?autoplay=1',1);" class="vid_thumb" id="vid_thumb_RCK-E5AopVI" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/RCK-E5AopVI/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/RCK-E5AopVI" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=RCK-E5AopVI" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_007.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/RCK-E5AopVI" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=RCK-E5AopVI" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_007.jpg"></a></div><div class="post_comment_body">
 <p>Крупнейшая битва в истории EVE Online: уничтожено кораблей на $200 000<br><br>27-28
  января 2014 года в EVE Online прошло крупнейшее сражение за 
 десятилетнюю историю этой игры. В основном бою участвовало 5283 корабля.
@@ -4935,7 +4961,7 @@ CFC/RUS идёт с октября 2013 года.<br><br>Сражение про
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Чтв 30 Янв 2014 11:14:53&nbsp;</span>&nbsp;<span class="post_num">#430</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1449635"></a><a href="#1449635">№1449635</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">431</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'p0qcXjMQyWk','https://www.youtube.com/v/p0qcXjMQyWk?autoplay=1',1);" class="vid_thumb" id="vid_thumb_p0qcXjMQyWk" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/p0qcXjMQyWk/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/p0qcXjMQyWk" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=p0qcXjMQyWk" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_028.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/p0qcXjMQyWk" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=p0qcXjMQyWk" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_028.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1449631" onclick="highlight(1449631)">&gt;&gt;1449631</a><br></p>
 </div><div class="de-refmap"><a href="#1449676" class="de-link-backref">&gt;&gt;1449676</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1449676" href="#1449676">&gt;&gt;1449676</a></span></span>
@@ -5008,7 +5034,7 @@ CFC/RUS идёт с октября 2013 года.<br><br>Сражение про
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 31 Янв 2014 11:52:33&nbsp;</span>&nbsp;<span class="post_num">#437</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1450496"></a><a href="#1450496">№1450496</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">438</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'kKCCNMyKNJc','https://www.youtube.com/v/kKCCNMyKNJc?autoplay=1',1);" class="vid_thumb" id="vid_thumb_kKCCNMyKNJc" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/kKCCNMyKNJc/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/kKCCNMyKNJc" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=kKCCNMyKNJc" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_018.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/kKCCNMyKNJc" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=kKCCNMyKNJc" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_018.jpg"></a></div><div class="post_comment_body">
 <p>.</p>
 </div>
 </span>
@@ -5068,7 +5094,7 @@ CFC/RUS идёт с октября 2013 года.<br><br>Сражение про
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 31 Янв 2014 17:20:50&nbsp;</span>&nbsp;<span class="post_num">#443</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1450680"></a><a href="#1450680">№1450680</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">444</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'5Pc1iVDrOy4','https://www.youtube.com/v/5Pc1iVDrOy4?autoplay=1',1);" class="vid_thumb" id="vid_thumb_5Pc1iVDrOy4" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/5Pc1iVDrOy4/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/5Pc1iVDrOy4" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=5Pc1iVDrOy4" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_005.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/5Pc1iVDrOy4" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=5Pc1iVDrOy4" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_005.jpg"></a></div><div class="post_comment_body">
 <p>DUSHA</p>
 </div><div class="de-refmap"><a href="#1450683" class="de-link-backref">&gt;&gt;1450683</a><span class="de-refcomma">, </span><a href="#1450696" class="de-link-backref">&gt;&gt;1450696</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1450683" href="#1450683">&gt;&gt;1450683</a>, <a class="reply" postid="1450696" href="#1450696">&gt;&gt;1450696</a></span></span>
@@ -5097,7 +5123,7 @@ CFC/RUS идёт с октября 2013 года.<br><br>Сражение про
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 31 Янв 2014 17:48:57&nbsp;</span>&nbsp;<span class="post_num">#446</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1450701"></a><a href="#1450701">№1450701</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">447</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'ttpmR2lGOjs','https://www.youtube.com/v/ttpmR2lGOjs?autoplay=1',1);" class="vid_thumb" id="vid_thumb_ttpmR2lGOjs" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/ttpmR2lGOjs/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/ttpmR2lGOjs" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ttpmR2lGOjs" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_031.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/ttpmR2lGOjs" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=ttpmR2lGOjs" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_031.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1450683" onclick="highlight(1450683)">&gt;&gt;1450683</a><br>A TO!<br>Вот полная версия.</p>
 </div>
 </span>
@@ -5106,7 +5132,7 @@ CFC/RUS идёт с октября 2013 года.<br><br>Сражение про
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Птн 31 Янв 2014 20:33:16&nbsp;</span>&nbsp;<span class="post_num">#447</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1450835"></a><a href="#1450835">№1450835</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">448</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'UC1pNmb8bG0','https://www.youtube.com/v/UC1pNmb8bG0?autoplay=1',1);" class="vid_thumb" id="vid_thumb_UC1pNmb8bG0" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/UC1pNmb8bG0/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/UC1pNmb8bG0" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=UC1pNmb8bG0" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_006.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/UC1pNmb8bG0" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=UC1pNmb8bG0" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%233_files/0_006.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1450696" onclick="highlight(1450696)">&gt;&gt;1450696</a><br>Нет. ЛОГХ на сладкое.</p>
 </div><div class="de-refmap"><a href="#1450860" class="de-link-backref">&gt;&gt;1450860</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1450860" href="#1450860">&gt;&gt;1450860</a></span></span>
