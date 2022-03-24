@@ -332,32 +332,58 @@
 	.de-wait { margin: 0 2px -3px 0 !important; width: 16px; height: 16px; }
 	#de-wrapper-popup { overflow-x: hidden !important; overflow-y: auto !important; -moz-box-sizing: border-box; box-sizing: border-box; max-height: 100vh; position: fixed; right: 0; top: 0; z-index: 9999; font: 14px arial; cursor: default; }
 	@keyframes de-wait-anim { to { transform: rotate(360deg); } }
-	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
-	.de-video-obj { width: 360px; height: 270px; }
-	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
-	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
-	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
-	.de-mypost-reply:not(.de-pview) { position: relative; }
-	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
-	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
-	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
-	.de-ref-you::after { content: " (You)"; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
-	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
-	.de-btn-fav-sel { color: #FFE100; }
-	.de-btn-hide-user { color: #BFFFBF; }
-	.de-btn-sage { fill: #4B4B4B; }
-	.de-btn-stick-on { color: #BFFFBF; }
-	.de-btn-unhide-user { color: #FFBFBF; }
-	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
-	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
-	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
-	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
-	.de-thr-hid:not([style="display: none;"]) + div + br, 
-	body > hr, .postarea, .theader { display: none !important; }
-	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
-	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
-	.post { overflow-x: auto !important; }
+	form > hr { clear: both }</style><style type="text/css" id="de-css-dynamic">
+
+	.de-video-obj { width: 360px; height: 270px; }
+
+	.de-new-post { box-shadow: 6px 0 2px -2px rgba(107,134,97,.8), -6px 0 2px -2px rgba(107,134,97,.8) !important; }
+
+	.de-selected, .de-input-error { box-shadow: 6px 0 2px -2px rgba(220,0,0,.8), -6px 0 2px -2px rgba(220,0,0,.8) !important; }
+
+	.de-mypost { box-shadow: 6px 0 2px -2px rgba(97,107,134,.8), -6px 0 2px -2px rgba(97,107,134,.8) !important; }
+
+	.de-mypost-reply:not(.de-pview) { position: relative; }
+
+	.de-mypost-reply::before { content: ""; position: absolute; top: -0; bottom: 0; left: -1px; border-left: 5px dotted rgba(97,107,134,.8) !important; }
+
+	.de-ref-del.de-ref-you::after { content: " (Del)(You)"; }
+
+	.de-ref-op.de-ref-you::after { content: " (OP)(You)"; }
+
+	.de-ref-you::after { content: " (You)"; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-hide, .de-btn-img, .de-btn-reply, .de-btn-sage, .de-btn-stick, .de-btn-unhide { color: #F5F5F5; }
+
+	.de-btn-expthr, .de-btn-fav, .de-btn-fav-sel, .de-btn-hide, .de-btn-hide-user, .de-btn-img, .de-btn-reply, .de-btn-stick, .de-btn-stick-on, .de-btn-unhide, .de-btn-unhide-user { fill: #8c8c8c; }
+
+	.de-btn-fav-sel { color: #FFE100; }
+
+	.de-btn-hide-user { color: #BFFFBF; }
+
+	.de-btn-sage { fill: #4B4B4B; }
+
+	.de-btn-stick-on { color: #BFFFBF; }
+
+	.de-btn-unhide-user { color: #FFBFBF; }
+
+	.de-fullimg-wrap-inpost > .de-fullimg { max-width: 100%;; }
+
+	.post_comment_body { max-width: 2000px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; }
+
+	.spoiler, s { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.spoiler > a, s > a:not(:hover) { color: #F5F5F5 !important; background-color: #888 !important; }
+
+	.de-thr-hid:not([style="display: none;"]) + div + br, 
+
+	body > hr, .postarea, .theader { display: none !important; }
+
+	.media-expand-button, .post_replies, .post_num, .poster_sage { display: none !important; }
+
+	.navbar-fixed-top, .thread_header_fixed { z-index: 5 !important; }
+
+	.post { overflow-x: auto !important; }
+
 	.thread_inner img.de-fullimg { max-width: 100% !important; max-height: 100% !important; }</style><style type="text/css" id="de-css-user"></style><style type="text/css">.post { background-color: rgb(221, 221, 221) !important; }</style></head>
 
   <body class="contr_thread de-runned" style="">
@@ -990,7 +1016,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аниметян</span>&nbsp;<span class="poster_trip">!!y3IbzmNj</span>&nbsp;<span class="post_time">Суб 01 Фев 2014 22:39:21&nbsp;</span>&nbsp;<span class="post_num">#55</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1451649"></a><a href="#1451649">№1451649</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">55</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'HCm6gRHINqA','https://www.youtube.com/v/HCm6gRHINqA?autoplay=1',1);" class="vid_thumb" id="vid_thumb_HCm6gRHINqA" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/HCm6gRHINqA/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/HCm6gRHINqA" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=HCm6gRHINqA" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/0_002.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/HCm6gRHINqA" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=HCm6gRHINqA" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/0_002.jpg"></a></div><div class="post_comment_body">
 <p><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1451634" onclick="highlight(1451634)">&gt;&gt;1451634</a><br>Вот чего я действительно хочу, так это заняться сексом. Под видеорелейтед.<br><a onmouseover="showPostPreview(event)" onmouseout="delPostPreview(event)" href="#1451637" onclick="highlight(1451637)">&gt;&gt;1451637</a><br>Ты семенить не устал, пидор с разорванной сракой?</p>
 </div><div class="de-refmap"><a href="#1451659" class="de-link-backref">&gt;&gt;1451659</a><span class="de-refcomma">, </span></div>
 <span class="post_replies"><i>Ответы: </i><a class="reply" postid="1451659" href="#1451659">&gt;&gt;1451659</a></span></span>
@@ -1309,7 +1335,7 @@
 <div class="post_head">
 <span class="poster_name" title="">Аноним</span>&nbsp;<span class="post_time">Вск 02 Фев 2014 18:10:28&nbsp;</span>&nbsp;<span class="post_num">#85</span>&nbsp;<span class="post_id"><a style="position:absolute;margin-top:-50px;" id="1452425"></a><a href="#1452425">№1452425</a></span><span class="de-post-btns"> <svg class="de-btn-reply"><use xlink:href="#de-symbol-post-reply"></use></svg><span class="de-post-counter">84</span></span>&nbsp;</div>
 <span class="post_comment">
-<img onclick="show_video(this,'a4eav7dFvc8','https://www.youtube.com/v/a4eav7dFvc8?autoplay=1',1);" class="vid_thumb" id="vid_thumb_a4eav7dFvc8" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/pre_yt.png" style="background-image:url(http://img.youtube.com/vi/a4eav7dFvc8/0.jpg)" width="420" height="315"><a target="_blank" href="https://www.youtube.com/v/a4eav7dFvc8" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=a4eav7dFvc8" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/0.jpg"></a></div><div class="post_comment_body">
+<a target="_blank" href="https://www.youtube.com/v/a4eav7dFvc8" rel="nofollow" class="de-video-link de-ytube">[url]</a><div class="de-video-obj"><a class="de-video-player" href="https://www.youtube.com/watch?v=a4eav7dFvc8" target="_blank"><img class="de-video-thumb de-ytube" src="%D0%9A%D0%9E%D0%A1%D0%9C%D0%9E%D0%A2%D0%A0%D0%95%D0%94%20%234_files/0.jpg"></a></div><div class="post_comment_body">
 </div>
 </span>
 </div>
