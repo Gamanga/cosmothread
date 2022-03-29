@@ -1,0 +1,122 @@
+@charset "utf-8";
+body {
+color: #000;
+background-color: #fff; 
+font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Liberation Sans", "Sans Uralic", "Droid Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.ml-dg:before, .ml-dt:before { color: #000; }
+
+.body { font-size: 0.9em; }
+
+a, .likelink, .spoiler:hover a, .spoiler:focus a, .spoiler a:focus { color: #05c; }
+.spoiler:focus-within a { color: #05c; }
+a:hover, .likelink:hover, .spoiler:hover a:hover, .open-spoiler a:hover { color: #c00; }
+.likelink { border-bottom-color: #05c; }
+.likelink:hover { border-bottom-color: #c00; }
+.ll-h:hover .likelink { color: #c00; border-bottom-color: #c00; }
+
+hr { border: 1px dotted #bbb; }
+
+h1.native, h2.native { font-family: "Georgia", "Liberation Serif", "Droid Serif", "Roman Uralic", serif;
+font-size: 1.7em; font-weight: 400; margin: 0; padding: 0 3px;
+text-align: right; white-space: nowrap; }
+
+@media all and (min-width: 666px) { h1.native { background: url('../img/bashlogo.gif') left center no-repeat;  margin: 5px 0; } }
+
+#greeting { float: none; text-align: right; }
+
+h1.native { font-weight: 700; }
+h3.native, .complex-header__container { border-bottom: 1px dotted #bbb; margin-top: 0.5em; padding-left: 0; }
+h4.native { padding: 0; }
+
+.warn { background-color: #f3f3f3; border: 1px dotted #bbb !important; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-top: 3px; }
+
+.reply, .lst_rpl { background-color: #f3f3f3; border: 1px dotted #bbb; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+font-family: "Monaco", "Liberation Mono", "Droid Sans Mono", "Ubuntu Mono", "Lucida Console", "Helvetica Neue", monospace;
+line-height: 1.3em; }
+
+.rpl-hl { background-color: #fff; }
+.reply:focus { background-color: #fff; }
+.reply:target { background-color: #fff; }
+
+.uid-hl { -webkit-box-shadow: #86bbff 0 0 .5em inset, #2887ff 0 0 .75em; -moz-box-shadow: #86bbff 0 0 .5em inset, #2887ff 0 0 .75em; box-shadow: #86bbff 0 0 .5em inset, #2887ff 0 0 .75em; }
+.uid-counter { height: 1.6em; vertical-align: baseline; font-size: .9em; width: 1.6em; }
+.reply .op-mark { padding: .3em .5em .2em .45em; }
+.reply:focus { background-color: #fff; }
+.reply:target { background-color: #fff; }
+.fake-hl { background-color: #fff; }
+.double-fake-hl { background-color: #f3f3f3 !important; }
+@supports selector(.reply:target) {
+    .reply:focus { background-color: #f3f3f3; }
+    .reply:focus.reply:target { background-color: #fff; }
+}
+
+@-webkit-keyframes highlighter {
+  0% { background-color: #d2e6ff; }  
+  75% { background-color: #d2e6ff; }
+  100% { background-color: transparent; }
+}
+@-moz-keyframes highlighter {
+  0% { background-color: #d2e6ff; }  
+  75% { background-color: #d2e6ff; }
+  100% { background-color: transparent; }
+}
+@-o-keyframes highlighter {
+  0% { background-color: #d2e6ff; }  
+  75% { background-color: #d2e6ff; }
+  100% { background-color: transparent; }
+}
+@keyframes highlighter {
+  0% { background-color: #d2e6ff; }  
+  75% { background-color: #d2e6ff; }
+  100% { background-color: transparent; }
+}
+
+.lst_rpl { margin-bottom: 0.5em; }
+
+.reply { padding: 3px; }
+
+.reply time { color: #8c8c8c; font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Liberation Sans", "Sans Uralic", "Droid Sans", sans-serif; }
+
+.ans { font-size: 0.8em; }
+
+.reflink  a, a.reflink, .pstcnt { font-size: 1em; font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Liberation Sans", "Sans Uralic", "Droid Sans", sans-serif; }
+.reflink  a:before, a.reflink:before { content: "#"; }
+.pstcnt { color: #000; font-weight: normal; }
+.reflink b { font-weight: normal; }
+/*
+.reply span.reflink::before { content: "+ "; }
+.reply span.reflink::after { content: " - [:|||:]"; }
+
+.thread span.cnt::before { content: "+ "; }
+.thread span.cnt::after { content: " -"; }
+*/
+
+.ans {  font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Liberation Sans", "Sans Uralic", "Droid Sans", sans-serif; font-style: normal; }
+
+.hand:hover, .hover-color:hover { background-color: #e2e7ea; }
+.lst_rpl:hover { background-color: #f9f9f9; }
+
+.img_size, .img_size-big, .thrd-thumb { color: #999; line-height: 13px !important;
+font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Liberation Sans", "Sans Uralic", "Droid Sans", sans-serif; }
+
+.spoiler, .open-spoiler { padding-top: 0.3em; background-color: #bbb; }
+.spoiler, .spoiler a, .spoiler .unkfunc, .spoiler .dice, .spoiler font[color="green"], .spoiler .ml-dg:before, .spoiler .ml-dt:before { color: #bbb; } 
+.spoiler:hover, .spoiler:focus, .open-spoiler, .spoiler:hover .ml-dg:before, .spoiler:focus .ml-dg:before, .spoiler:hover .ml-dt:before, .spoiler:focus .ml-dt:before { color: #333; }
+.spoiler:focus-within, .spoiler:focus-within .ml-dg:before, .spoiler:focus-within .ml-dt:before { color: #333; }
+
+.unkfunc, .spoiler:hover .unkfunc, .spoiler:focus .unkfunc, .unkfunc .ml-dg:before, .unkfunc .ml-dt:before { color:#789922; }
+.spoiler:focus-within .unkfunc { color:#789922; }
+
+.postertrip, .postertripid { color: #228854; }
+
+.pale { color: #939393; } 
+
+.good { color: green; }
+
+.sage { color: red; }
+
+.mod { color: #26a; }
+
+.adm { color: #800080; }
