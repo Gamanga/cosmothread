@@ -1,2 +1,3 @@
 # cosmothread.github.io
-Работаем над архивчиком космотредика и не только:3
+Архив.
+https://gamanga.github.io/cosmothread/
