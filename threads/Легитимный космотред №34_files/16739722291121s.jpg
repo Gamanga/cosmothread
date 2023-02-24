@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+	<head>
+		<title>
+			Not found
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link id="favicon" rel="shortcut icon" href="/favicon.ico" />
+		<link href="/static/css/normalize.css" type="text/css" rel="stylesheet">
+		<link href="/static/css/melchizedek.css" type="text/css" rel="stylesheet">
+		<link href="/static/css/404.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/js/jquery.1.7.2.min.js"></script>	
+	</head>
+	<body>
+		<!-- Лого -->
+		<header class="header">
+			<a href="/">
+			<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 509.9 188.5" style="enable-background:new 0 0 509.9 188.5;width: 300px;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:#1B1B1B;}
+						.st1{fill:url(#SVGID_1_);}
+						.st2{display:none;}
+					</style>
+					<g id="Слой_1_1_">
+						<path class="st0" d="M148.4,115.5h10c7.9-18.4,11.7-36.5,11.7-72.8V30.3h77.3v85.2h10.2l-5.6,43.3h-20.1v-22.2h-59.3l-4.1,22.2
+							h-20.1L148.4,115.5L148.4,115.5z M192.5,51.4v10.8c0,22.5-3.5,38.6-9.6,53.3h41V51.4H192.5z"/>
+						<path class="st0" d="M350.9,113c0-17.8,13.5-26,32.8-26c8.2,0,14.1,1.4,19.9,3.3v-1.4c0-9.6-5.9-14.9-17.5-14.9
+							c-8.8,0-15,1.7-22.5,4.4l-5.8-17.6c9-3.9,17.8-6.5,31.6-6.5c12.6,0,21.7,3.3,27.5,9.1c6.1,6.1,8.8,15,8.8,26v47.2h-22.3v-8.8
+							c-5.6,6.2-13.4,10.3-24.6,10.3C363.5,138.2,350.9,129.4,350.9,113z M403.9,107.9v-4.1c-3.9-1.8-9.1-3-14.7-3
+							c-9.9,0-15.9,3.9-15.9,11.5c0,6.2,5.2,9.9,12.6,9.9C396.6,122.2,403.9,116.3,403.9,107.9z"/>
+						<path class="st0" d="M459.6,80.8c0,8.5,3.6,13.4,11.2,13.4c6.2,0,11.2-1.7,15.8-3.9V55.2h23.2v81.4h-23.2v-28.4
+							c-5.6,2.7-13.8,5.3-22,5.3c-16.3,0-28.4-9.3-28.4-26.3v-32h23.4V80.8z"/>
+						<path class="st0" d="M334.5,98c-2.1-1.8-4.5-3.2-7.1-4.1c1.9-1,3.7-2.3,5.2-3.9c3.6-3.7,5.9-8.7,5.9-14.3c0-9.3-6.9-17.8-15.9-20
+							c-3.4-0.8-7.1-0.5-10.6-0.5h-42.1v81.4h50.3c10.3,0,19.5-7.5,21.6-17.6c0.3-1.5,0.5-3,0.4-4.5C342.1,108.2,339.3,102.2,334.5,98z
+							 M292.6,72h15.6c4.4,0,8.1,3.6,8.1,8.1c0,4.4-3.6,8.1-8.1,8.1h-15.6V72z M311.6,121.1h-18.9c0,0,0,0-0.1,0V105c0,0,0,0,0.1,0h18.9
+							c4.4,0,8.1,3.6,8.1,8.1C319.7,117.5,316,121.1,311.6,121.1z"/>
+							<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="48.9124" y1="235.6292" x2="72.3371" y2="23.9901" gradientTransform="matrix(1 0 0 -1 0 196.6667)">
+							<stop  offset="0" style="stop-color:#FFA90A"/>
+							<stop  offset="0.2518" style="stop-color:#FFA00D"/>
+							<stop  offset="0.6689" style="stop-color:#FE8616"/>
+							<stop  offset="0.9944" style="stop-color:#FE6E1F"/>
+						</linearGradient>
+						<polygon class="st1" points="123.8,61.8 75.7,61.8 107.3,0.6 45.3,0.6 0.2,97.3 49.8,97.3 25.9,188.5 	"/>
+					</g>
+				</svg>
+				</a>
+		</header>
+		<!-- /Лого -->
+		<div class="box box_type_nf nf">
+			<div class="box__data nf__data">
+				<script type="text/javascript">
+					function getRand(min, max){
+					 return Math.round(Math.random()*(max-min))+min;
+					}
+
+					var images = new Array("/static/img/nf/1.png", "/static/img/nf/monkey_not_found.jpg", "/static/img/nf/404_1.jpg", "/static/img/nf/404_2.jpg", "/static/img/nf/404_3.jpg", "/static/img/nf/404_4.jpg", "/static/img/nf/404_5.jpg", "/static/img/nf/404_6.jpg", "/static/img/nf/404_7.jpg", "/static/img/nf/404_8.jpg", "/static/img/nf/notfound.jpg", "/static/img/nf/404_9.gif"); // сюда вписать картинки, можно сколько угодно
+					var lo = 0;
+					var hi = images.length-1;
+					var num = getRand(lo, hi);
+					document.write("<img class='nf__img' src='"+images[num]+"'>");
+				</script>
+			</div>
+			<div class="box__header nf__header"><span class="nf__nf">404</span> <br> Ничего не найдено<br> Вместо этого можете подписаться на телеграм-канал Двача<br> <a href="https://t.me/dvachannel">@dvachannel</a> </div>
+		</div>
+		<footer class="footer">
+					<a href="/">Главная</a> / <a href="/static/rules.html">Правила</a> / <a href="/d/">Идеи и предложения</a> / <a href="https://vk.com/ru2ch">VK</a> / <!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t26.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='88' height='15'><\/a>")
+//--></script><!--/LiveInternet-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53637455-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+				<script>
+					function getCookie(name){
+						with(document.cookie) {
+							var regexp = new RegExp('(^|;\\s+)' + name + '=(.*?)(;|$)');
+							var hit = regexp.exec(document.cookie);
+
+							if(hit && hit.length > 2) return unescape(hit[2]);
+							else return null;
+						}
+					}
+					function setCookie(key, value, days) {
+						if(days)
+						{
+							var date=new Date();
+							date.setTime(date.getTime() + days*24*60*60*1000);
+							var expires = '; expires=' + date.toGMTString();
+
+						}
+						else expires = '';
+
+						document.cookie = key + '=' + value + expires + '; path=/';
+					}
+					(function showPlashque() {
+						var active = true;//ТУТ ВКЛ ВЫКЛ
+					    var activeMob = true;//ТУТ ВКЛ ВЫКЛ БАННЕРА МОБИЛЬНОГО
+
+					    var desktop = 1; //1 - desktop, 0 - mobile
+					    window.innerWidth <= 480 ? desktop = 0 : desktop = 1;
+						if(!active && desktop) return;
+					    if(!activeMob && !desktop) return; 
+
+					    var content = '';
+						
+						var $el = $('.makaba');
+						$el = $('html');
+						var show_plashque = getCookie('plashque');
+
+					    if(desktop) {
+					    	content = 'Подписывайся на главный канал в Телеграме - <a href="https://t.me/dvachannel">@dvachannel</a>. Мемы, новости, смешные видео и коты тебя уже ждут.';
+					    } else {
+					        var banner = "/banners/0LyqzyvkiidLWqqm.jpg ";
+					        var link = "https://t.me/dvachannel";
+					        content = '<a href="' + link + '"><img class="mob-banner" src="' + banner + '"></a>';
+					    }
+					    var plashque = '<div id="' + (desktop ? 'plashque' : 'mobile-plashque') + '">' +	content + '<span id="plashque-close">X</span></div>';
+						//@todo media query вместо 2х id
+					    if(show_plashque != 1) {
+								$el.append(plashque);
+						}
+						$("#plashque-close").click(function(){
+							setCookie("plashque", 1, 1);
+							if(desktop) {
+					            $('#plashque').slideUp();
+					        } else {
+					            $('#mobile-plashque').slideUp();
+					        }
+							return false;
+					    });  
+					})()
+				</script>
+		</footer>
+	</body>
+</html>
