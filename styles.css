@@ -1,0 +1,42 @@
+body {
+  background-color: #222;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  font-weight: bold;
+}
+
+a {
+  color: #aaf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
