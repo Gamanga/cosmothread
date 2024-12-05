@@ -88,10 +88,9 @@
         <div class="tabs">
             <ul>
                 <li class="active" data-tab-target="#tab1">Главная страница</li>
-                <li data-tab-target="#tab2">Архив</li>
+                <li data-tab-target="#tab2">Архив (I-VI)</li>
 				<li data-tab-target="#tab3">Архив (1-20)</li>
 				<li data-tab-target="#tab4">Архив (21-40)</li>
-                <li data-tab-target="#tab5">Шапка</li>
             </ul>
         </div>
 
@@ -144,7 +143,7 @@
 
 
 <div class="tab-content" id="tab2" style="display: none;">
-	<img src="https://gamanga.github.io/cosmothread/media/16485759090890.png" alt="Image">
+
     <div class="table-container">
     <table>
     <!--таблица --> 
@@ -651,35 +650,6 @@
 		</table>
 </div>
 </div>
-
-<div class="tab-content" id="tab5" style="display: none;">
-<p>FAQ по Макроссам:</br>
-http://pastebin.com/uMLN4gET</br>
-FAQ по Гандамам:</br>
-https://l.idrix.fr/J3FAW</br>
-FAQ по ЛОГХ:</br>
-http://pastebin.com/3cLLrNyH</br>
-FAQ по Лейдзиверс:</br>
-http://pastebin.com/yqWiT79w</br>
-FAQ по Тенчи:</br>
-https://l.idrix.fr/8fUL3</br>
-</br>
-Остальное тут:</br>
-https://l.idrix.fr/zcJpZ</br>
-</br>
-------------------------</br>
-</br>
-Старая шапка:</br>
-https://l.idrix.fr/yNiXO</br>
-</br>
-Архив тредов:</br>
-https://gamanga.github.io/cosmothread</p>
-
-            <button id="copy-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Скопировать текст</button>
-
-            <p id="copied-message" class="text-green-500 hidden">Должно сработать!</p>
-
- </div>
     </section>
 
     <script>
@@ -698,23 +668,6 @@ https://gamanga.github.io/cosmothread</p>
                 });
                 target.style.display = 'block';
             });
-        });
-
-        // Copy text functionality
-        const copyButton = document.getElementById('copy-button');
-        const copiedMessage = document.getElementById('copied-message');
-
-        copyButton.addEventListener('click', () => {
-            navigator.clipboard.writeText(document.querySelector('#tab3 > p').textContent)
-                .then(() => {
-                    copiedMessage.classList.remove('hidden');
-                    setTimeout(() => {
-                        copiedMessage.classList.add('hidden');
-                    }, 2000);
-                })
-                .catch(err => {
-                    console.error('Failed to copy: ', err);
-                });
         });
     </script>
 </body>
